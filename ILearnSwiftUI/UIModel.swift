@@ -45,8 +45,9 @@ enum UIElementName: String, CaseIterable {
         switch self {
         case .text:
             makeNavigationLink(label: self.rawValue, destination: MyTextView(title: self.rawValue))
-            //        case .button:
-            //            <#code#>
+        case .button:
+            makeNavigationLink(label: self.rawValue, destination: MyButton())
+
             //        case .image:
             //            <#code#>
             //        case .textField:
